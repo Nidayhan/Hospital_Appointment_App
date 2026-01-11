@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="HospitalAppointment/HospitalAppointment.csproj" />
+  <Project Path="HospitalAppointment_core/HospitalAppointment_core.csproj" />
+  <Project Path="HospitalAppointment_domain/HospitalAppointment_domain.csproj" Id="5ba03c9b-3247-4748-91ea-431ae07856cb" />
+  <Project Path="HospitalAppointment_Infrastructure/HospitalAppointment_Infrastructure.csproj" Id="3d921982-4480-4b82-9941-54d89b4d64cb" />
+</Solution>

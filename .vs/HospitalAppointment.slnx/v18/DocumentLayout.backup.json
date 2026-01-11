@@ -1,0 +1,311 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9476EEA-3A5A-FA3C-575C-F65D33DB1F05}|HospitalAppointment_core\\HospitalAppointment_core.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_core\\interfaces\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9476EEA-3A5A-FA3C-575C-F65D33DB1F05}|HospitalAppointment_core\\HospitalAppointment_core.csproj|solutionrelative:hospitalappointment_core\\interfaces\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D921982-4480-4B82-9941-54D89B4D64CB}|HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D921982-4480-4B82-9941-54D89B4D64CB}|HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj|solutionrelative:hospitalappointment_infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9476EEA-3A5A-FA3C-575C-F65D33DB1F05}|HospitalAppointment_core\\HospitalAppointment_core.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_core\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9476EEA-3A5A-FA3C-575C-F65D33DB1F05}|HospitalAppointment_core\\HospitalAppointment_core.csproj|solutionrelative:hospitalappointment_core\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D921982-4480-4B82-9941-54D89B4D64CB}|HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_infrastructure\\hospitalappointment_infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3D921982-4480-4B82-9941-54D89B4D64CB}|HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj|solutionrelative:hospitalappointment_infrastructure\\hospitalappointment_infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D921982-4480-4B82-9941-54D89B4D64CB}|HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_infrastructure\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D921982-4480-4B82-9941-54D89B4D64CB}|HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj|solutionrelative:hospitalappointment_infrastructure\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9476EEA-3A5A-FA3C-575C-F65D33DB1F05}|HospitalAppointment_core\\HospitalAppointment_core.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_core\\services\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9476EEA-3A5A-FA3C-575C-F65D33DB1F05}|HospitalAppointment_core\\HospitalAppointment_core.csproj|solutionrelative:hospitalappointment_core\\services\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D921982-4480-4B82-9941-54D89B4D64CB}|HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D921982-4480-4B82-9941-54D89B4D64CB}|HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj|solutionrelative:hospitalappointment_infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AB93AD2-3CC3-A02C-CA1B-D095E3BB2845}|HospitalAppointment\\HospitalAppointment.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AB93AD2-3CC3-A02C-CA1B-D095E3BB2845}|HospitalAppointment\\HospitalAppointment.csproj|solutionrelative:hospitalappointment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AB93AD2-3CC3-A02C-CA1B-D095E3BB2845}|HospitalAppointment\\HospitalAppointment.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AB93AD2-3CC3-A02C-CA1B-D095E3BB2845}|HospitalAppointment\\HospitalAppointment.csproj|solutionrelative:hospitalappointment\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9476EEA-3A5A-FA3C-575C-F65D33DB1F05}|HospitalAppointment_core\\HospitalAppointment_core.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_core\\hospitalappointment_core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D9476EEA-3A5A-FA3C-575C-F65D33DB1F05}|HospitalAppointment_core\\HospitalAppointment_core.csproj|solutionrelative:hospitalappointment_core\\hospitalappointment_core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA03C9B-3247-4748-91EA-431AE07856CB}|HospitalAppointment_domain\\HospitalAppointment_domain.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_domain\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA03C9B-3247-4748-91EA-431AE07856CB}|HospitalAppointment_domain\\HospitalAppointment_domain.csproj|solutionrelative:hospitalappointment_domain\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA03C9B-3247-4748-91EA-431AE07856CB}|HospitalAppointment_domain\\HospitalAppointment_domain.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA03C9B-3247-4748-91EA-431AE07856CB}|HospitalAppointment_domain\\HospitalAppointment_domain.csproj|solutionrelative:hospitalappointment_domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA03C9B-3247-4748-91EA-431AE07856CB}|HospitalAppointment_domain\\HospitalAppointment_domain.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA03C9B-3247-4748-91EA-431AE07856CB}|HospitalAppointment_domain\\HospitalAppointment_domain.csproj|solutionrelative:hospitalappointment_domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA03C9B-3247-4748-91EA-431AE07856CB}|HospitalAppointment_domain\\HospitalAppointment_domain.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA03C9B-3247-4748-91EA-431AE07856CB}|HospitalAppointment_domain\\HospitalAppointment_domain.csproj|solutionrelative:hospitalappointment_domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9476EEA-3A5A-FA3C-575C-F65D33DB1F05}|HospitalAppointment_core\\HospitalAppointment_core.csproj|c:\\users\\nida0\\source\\repos\\hospitalappointment\\hospitalappointment_core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9476EEA-3A5A-FA3C-575C-F65D33DB1F05}|HospitalAppointment_core\\HospitalAppointment_core.csproj|solutionrelative:hospitalappointment_core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment_Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "HospitalAppointment_Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T19:37:43.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IAppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_core\\Interfaces\\IAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment_core\\Interfaces\\IAppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_core\\Interfaces\\IAppointmentRepository.cs",
+              "RelativeToolTip": "HospitalAppointment_core\\Interfaces\\IAppointmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T21:06:56.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_core\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment_core\\Services\\AppointmentService.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_core\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "HospitalAppointment_core\\Services\\AppointmentService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T16:39:34.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_Infrastructure\\Repositories\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment_Infrastructure\\Repositories\\AppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_Infrastructure\\Repositories\\AppointmentRepository.cs",
+              "RelativeToolTip": "HospitalAppointment_Infrastructure\\Repositories\\AppointmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T19:17:30.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_core\\Services\\IAppointmentService.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment_core\\Services\\IAppointmentService.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_core\\Services\\IAppointmentService.cs",
+              "RelativeToolTip": "HospitalAppointment_core\\Services\\IAppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T16:57:22.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment_Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_Infrastructure\\Class1.cs",
+              "RelativeToolTip": "HospitalAppointment_Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T19:13:47.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HospitalAppointment_Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj",
+              "RelativeDocumentMoniker": "HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj",
+              "RelativeToolTip": "HospitalAppointment_Infrastructure\\HospitalAppointment_Infrastructure.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-09T19:22:14.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment\\Program.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment\\Program.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment\\Program.cs",
+              "RelativeToolTip": "HospitalAppointment\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T19:03:07.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "HospitalAppointment\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T18:08:34.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_domain\\Entities\\Doctor.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment_domain\\Entities\\Doctor.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_domain\\Entities\\Doctor.cs",
+              "RelativeToolTip": "HospitalAppointment_domain\\Entities\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T18:01:01.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_domain\\Entities\\Appointment.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment_domain\\Entities\\Appointment.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_domain\\Entities\\Appointment.cs",
+              "RelativeToolTip": "HospitalAppointment_domain\\Entities\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T18:00:48.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_domain\\Entities\\Patient.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment_domain\\Entities\\Patient.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_domain\\Entities\\Patient.cs",
+              "RelativeToolTip": "HospitalAppointment_domain\\Entities\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T18:01:12.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_domain\\Class1.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment_domain\\Class1.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_domain\\Class1.cs",
+              "RelativeToolTip": "HospitalAppointment_domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T17:59:16.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HospitalAppointment_core.csproj",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_core\\HospitalAppointment_core.csproj",
+              "RelativeDocumentMoniker": "HospitalAppointment_core\\HospitalAppointment_core.csproj",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_core\\HospitalAppointment_core.csproj",
+              "RelativeToolTip": "HospitalAppointment_core\\HospitalAppointment_core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-03T21:00:37.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_core\\Class1.cs",
+              "RelativeDocumentMoniker": "HospitalAppointment_core\\Class1.cs",
+              "ToolTip": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_core\\Class1.cs",
+              "RelativeToolTip": "HospitalAppointment_core\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T20:46:29.171Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
