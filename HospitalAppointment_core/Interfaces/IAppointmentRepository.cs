@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalAppointment_domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,6 @@ namespace HospitalAppointment_core.Interfaces
     public interface IAppointmentRepository
     {
         bool IsDoctorAvailable(int doctorId, DateTime appointmentDateTime);
-        void SaveAppointment(int patientId, int doctorId, DateTime appointmentDateTime);
+        void SaveAppointment(Appointment appointment);
     }
 }

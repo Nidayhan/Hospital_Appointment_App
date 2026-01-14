@@ -1,4 +1,6 @@
 ﻿using HospitalAppointment_core.Interfaces;
+using HospitalAppointment_domain.Entities;
+using HospitalAppointment_Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +11,23 @@ namespace HospitalAppointment_Infrastructure.Repositories
 {
     public class AppointmentRepository : IAppointmentRepository
     {
-        public bool IsDoctorAvailable(int doctorId, DateTime appointmentDateTime)
+        private readonly ApplicationDbContext _context;
+
+        public AppointmentRepository(ApplicationDbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+        public bool IsDoctorAvailable(int doctorId, DateTime dateTime)
+        {
+            return !_context.Appointments
+                .Any(a => a.DoctorId == doctorId 
+                && a.AppointmentDateTime == dateTime);
         }
 
-        public void SaveAppointment(int patientId, int doctorId, DateTime appointmentDateTime)
+        public void SaveAppointment(Appointment appointment)
         {
-            throw new NotImplementedException();
+            _context.Appointments.Add(appointment);
+            _context.SaveChanges();
         }
     }
 }

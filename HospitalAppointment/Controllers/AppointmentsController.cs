@@ -1,4 +1,5 @@
-﻿using HospitalAppointment_core.Services;
+﻿using HospitalAppointment.DTOs;
+using HospitalAppointment_core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,9 +17,12 @@ namespace HospitalAppointment.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateAppointment(int patientId, int doctorId, DateTime dateTime)
-        { _appointmentService.CreateAppointment(patientId, doctorId, dateTime);
-            return Ok();
+        public IActionResult Create(AppointmentDTO dto)
+        { _appointmentService.CreateAppointment(
+            dto.PatientId, 
+            dto.DoctorId, 
+            dto.AppointmentDateTime);
+            return Ok("Created Appointment");
         }
     }
 }

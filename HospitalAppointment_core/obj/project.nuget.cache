@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "YvXB7KduV0s=",
+  "dgSpecHash": "fVx5/ueV2fg=",
   "success": true,
   "projectFilePath": "C:\\Users\\nida0\\source\\repos\\HospitalAppointment\\HospitalAppointment_core\\HospitalAppointment_core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nida0\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.23\\microsoft.windowsdesktop.app.ref.8.0.23.nupkg.sha512",
+    "C:\\Users\\nida0\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.23\\microsoft.netcore.app.ref.8.0.23.nupkg.sha512",
+    "C:\\Users\\nida0\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.23\\microsoft.aspnetcore.app.ref.8.0.23.nupkg.sha512"
+  ],
   "logs": []
 }
