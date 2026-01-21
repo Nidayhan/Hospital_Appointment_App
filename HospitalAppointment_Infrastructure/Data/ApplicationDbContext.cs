@@ -18,8 +18,12 @@ namespace HospitalAppointment_Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new AppointmentConfiguration());
+            modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
         }
 
         public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<Department> Department { get; set; }
+
+        public DbSet<Doctor> Doctors { get; set; }
     }
 }

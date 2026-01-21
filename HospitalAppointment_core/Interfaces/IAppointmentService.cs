@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HospitalAppointment_core.Services
+namespace HospitalAppointment_core.Interfaces
 {
     public interface IAppointmentService
     {

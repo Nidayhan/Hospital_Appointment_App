@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HospitalAppointment_core\HospitalAppointment_core.csproj" />
+    <ProjectReference Include="..\HospitalAppointment_domain\HospitalAppointment_domain.csproj" />
+    <ProjectReference Include="..\HospitalAppointment_Infrastructure\HospitalAppointment_Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

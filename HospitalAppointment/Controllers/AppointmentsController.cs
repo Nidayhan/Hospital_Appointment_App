@@ -1,5 +1,5 @@
 ﻿using HospitalAppointment.DTOs;
-using HospitalAppointment_core.Services;
+using HospitalAppointment_core.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

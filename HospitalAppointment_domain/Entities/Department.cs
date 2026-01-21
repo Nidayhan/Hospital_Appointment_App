@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace HospitalAppointment_domain.Entities
 {
-    public class Doctor
+    public class Department
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Specialty { get; set; }
-        public int DepartmentId { get; set; }
-        public Department Department { get; set; }
-        public ICollection<Appointment> Appointments { get; set; }
+
         public bool IsActive { get; set; }
+
+        public ICollection<Doctor> Doctors { get; set; }
     }
 }
