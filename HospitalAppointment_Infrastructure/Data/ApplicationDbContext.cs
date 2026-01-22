@@ -25,5 +25,7 @@ namespace HospitalAppointment_Infrastructure.Data
         public DbSet<Department> Department { get; set; }
 
         public DbSet<Doctor> Doctors { get; set; }
+
+        public DbSet<Patient> Patients { get; set; }
     }
 }

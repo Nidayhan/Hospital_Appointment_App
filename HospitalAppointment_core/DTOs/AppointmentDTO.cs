@@ -1,4 +1,4 @@
-﻿namespace HospitalAppointment.DTOs
+﻿namespace HospitalAppointment_core.DTOs
 {
     public class AppointmentDTO
     {
