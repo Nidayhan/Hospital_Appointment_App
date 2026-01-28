@@ -1,10 +1,10 @@
 ﻿using HospitalAppointment_Infrastructure.Data;
-using HospitalAppointment_core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HospitalAppointment_core.Interfaces.RepositoryInterfaces;
 
 namespace HospitalAppointment_Infrastructure.Repositories
 {

@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HospitalAppointment_core.Interfaces
+namespace HospitalAppointment_core.Interfaces.RepositoryInterfaces
 {
     public interface IAppointmentRepository
     {
-        bool IsDoctorAvailable(int doctorId, DateTime appointmentDateTime);
-        void SaveAppointment(Appointment appointment);
+        Task<bool> IsDoctorAvailable(int doctorId, DateTime appointmentDateTime);
+        Task SaveAppointment(Appointment appointment);
     }
 }

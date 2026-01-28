@@ -1,6 +1,7 @@
-﻿using HospitalAppointment_core.Interfaces;
+﻿using HospitalAppointment_core.Interfaces.RepositoryInterfaces;
 using HospitalAppointment_domain.Entities;
 using HospitalAppointment_Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,17 +18,16 @@ namespace HospitalAppointment_Infrastructure.Repositories
         {
             _context = context;
         }
-        public bool IsDoctorAvailable(int doctorId, DateTime dateTime)
+        public async Task<bool> IsDoctorAvailable(int doctorId, DateTime appointmentDateTime)
         {
-            return !_context.Appointments
-                .Any(a => a.DoctorId == doctorId 
-                && a.AppointmentDateTime == dateTime);
+            return await _context.Appointments
+                .AnyAsync(a => a.DoctorId == doctorId 
+                && a.AppointmentDateTime == appointmentDateTime);
         }
 
-        public void SaveAppointment(Appointment appointment)
+        public async Task SaveAppointment(Appointment appointment)
         {
-            _context.Appointments.Add(appointment);
-            _context.SaveChanges();
+            await _context.Appointments.AddAsync(appointment);
         }
     }
 }

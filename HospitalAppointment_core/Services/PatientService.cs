@@ -1,5 +1,6 @@
 ﻿using HospitalAppointment_core.DTOs;
 using HospitalAppointment_core.Interfaces;
+using HospitalAppointment_core.Interfaces.RepositoryInterfaces;
 using HospitalAppointment_core.Validators;
 using System;
 using System.Collections.Generic;

@@ -20,6 +20,9 @@ namespace HospitalAppointment_Infrastructure.Configuration
             builder.Property(x => x.PatientId).IsRequired();
 
             builder.Property(x => x.DoctorId).IsRequired();
+
+            builder.HasIndex(x => new { x.DoctorId, x.AppointmentDateTime })
+                .IsUnique();
         }
     }
 }

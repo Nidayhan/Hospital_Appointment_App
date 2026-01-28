@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HospitalAppointment_core.Interfaces
+namespace HospitalAppointment_core.Interfaces.RepositoryInterfaces
 {
     public interface IDoctorRepository
     {

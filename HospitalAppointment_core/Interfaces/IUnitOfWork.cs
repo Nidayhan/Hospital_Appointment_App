@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace HospitalAppointment_core.Interfaces
 {
-    public interface IAppointmentService
+    public interface IUnitOfWork : IDisposable
     {
-        public Task CreateAppointment(int patientId, int doctorId, DateTime appointmentDateTime);
+        Task<int> CommitAsync();
     }
 }

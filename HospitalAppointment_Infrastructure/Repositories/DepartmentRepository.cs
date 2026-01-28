@@ -1,4 +1,4 @@
-﻿using HospitalAppointment_core.Interfaces;
+﻿using HospitalAppointment_core.Interfaces.RepositoryInterfaces;
 using HospitalAppointment_domain.Entities;
 using HospitalAppointment_Infrastructure.Data;
 using System;

@@ -1,4 +1,4 @@
-﻿using HospitalAppointment.DTOs;
+﻿using HospitalAppointment_core.DTOs;
 using HospitalAppointment_core.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,12 +17,22 @@ namespace HospitalAppointment.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(AppointmentDTO dto)
-        { _appointmentService.CreateAppointment(
-            dto.PatientId, 
-            dto.DoctorId, 
-            dto.AppointmentDateTime);
-            return Ok("Created Appointment");
+        public async Task<IActionResult> Create([FromBody] AppointmentDTO dto)
+        {
+            try
+            {
+                await _appointmentService.CreateAppointment(
+                    dto.PatientId,
+                    dto.DoctorId,
+                    dto.AppointmentDateTime
+                );
+
+                return Ok("Created Appointment");
+            }
+            catch (Exception ex)
+            {
+                return Conflict(ex.Message);
+            }
         }
     }
 }

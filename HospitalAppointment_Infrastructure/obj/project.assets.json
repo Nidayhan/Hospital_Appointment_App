@@ -1513,7 +1513,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "FluentValidation": "12.1.1",
-          "HospitalAppointment_domain": "1.0.0"
+          "HospitalAppointment_domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.22"
         },
         "compile": {
           "bin/placeholder/HospitalAppointment_core.dll": {}
@@ -1525,6 +1526,9 @@
       "HospitalAppointment_domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.22"
+        },
         "compile": {
           "bin/placeholder/HospitalAppointment_domain.dll": {}
         },

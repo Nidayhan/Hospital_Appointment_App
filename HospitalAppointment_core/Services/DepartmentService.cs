@@ -1,4 +1,5 @@
 ﻿using HospitalAppointment_core.Interfaces;
+using HospitalAppointment_core.Interfaces.RepositoryInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
