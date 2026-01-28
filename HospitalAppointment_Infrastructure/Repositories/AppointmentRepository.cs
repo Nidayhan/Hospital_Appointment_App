@@ -18,6 +18,15 @@ namespace HospitalAppointment_Infrastructure.Repositories
         {
             _context = context;
         }
+
+        public async Task<Appointment?> GetByIdAsync(int id)
+        {
+            return await _context.Appointments
+                .Include(a => a.Doctor)
+                .Include(a => a.Patient)
+                .FirstOrDefaultAsync(a => a.Id == id);
+        }
+
         public async Task<bool> IsDoctorAvailable(int doctorId, DateTime appointmentDateTime)
         {
             return await _context.Appointments
@@ -28,6 +37,11 @@ namespace HospitalAppointment_Infrastructure.Repositories
         public async Task SaveAppointment(Appointment appointment)
         {
             await _context.Appointments.AddAsync(appointment);
+        }
+
+        public void Update(Appointment appointment)
+        {
+            _context.Appointments.Update(appointment);
         }
     }
 }

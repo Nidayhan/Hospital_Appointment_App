@@ -11,5 +11,8 @@ namespace HospitalAppointment_core.Interfaces.RepositoryInterfaces
     {
         Task<bool> IsDoctorAvailable(int doctorId, DateTime appointmentDateTime);
         Task SaveAppointment(Appointment appointment);
+        Task<Appointment?> GetByIdAsync(int id);
+        
+        void Update(Appointment appointment);
     }
 }

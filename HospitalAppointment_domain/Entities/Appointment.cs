@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalAppointment_domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -14,8 +15,10 @@ namespace HospitalAppointment_domain.Entities
         public int DoctorId { get; set; }
         public DateTime AppointmentDateTime { get; set; }
         [Timestamp]
-        public byte[] RowVerion { get; set; }
+        public byte[] RowVersion { get; set; }
         public Doctor Doctor { get; set; }
         public Patient Patient { get; set; }
+
+        public AppointmentStatus Status { get; set; } = AppointmentStatus.Pending;
     }
 }

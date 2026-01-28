@@ -1,6 +1,8 @@
-﻿using HospitalAppointment_core.Interfaces;
+﻿using HospitalAppointment_core.BusinessRules;
+using HospitalAppointment_core.Interfaces;
 using HospitalAppointment_core.Interfaces.RepositoryInterfaces;
 using HospitalAppointment_domain.Entities;
+using HospitalAppointment_domain.Enums;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -56,6 +58,31 @@ namespace HospitalAppointment_core.Services
                     "A database error occurred while saving the appointment.");
             }
 
+        }
+
+        public async Task CancelAppointment(int appointmentId, int currentUserId)
+        {
+            var appointment = await _appointmentRepository.GetByIdAsync(appointmentId);
+
+            if (appointment == null)
+            {
+                throw new Exception("Appointment not found");
+            }
+            new CannotCancelPastAppointmentRule(appointment.AppointmentDateTime).Check();
+            new CannotModifyCompletedAppointmentRule(appointment.Status).Check();
+            new PatientCanOnlyCancelOwnAppointmentRule(appointment.PatientId, currentUserId).Check();
+
+            appointment.Status = AppointmentStatus.Cancelled;
+            _appointmentRepository.Update(appointment);
+
+            try
+            {
+                await _unitOfWork.CommitAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                throw new Exception("Appointment was modified by another user.");
+            }
         }
     }
 }

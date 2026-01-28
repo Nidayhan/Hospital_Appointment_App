@@ -8,6 +8,7 @@ namespace HospitalAppointment_core.Interfaces
 {
     public interface IAppointmentService
     {
+        Task CancelAppointment(int appointmentId, int currentUserId);
         public Task CreateAppointment(int patientId, int doctorId, DateTime appointmentDateTime);
     }
 }
