@@ -1,4 +1,5 @@
 ﻿using HospitalAppointment_core.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,8 +21,9 @@ namespace HospitalAppointment.Controllers
         {
             var result = _departmentService.DeleteDepartment(id);
 
-            if (!result) { 
-            
+            if (!result)
+            {
+
                 return NotFound("Department not found or already inactive");
             }
             return Ok("Department deleted successfully");
