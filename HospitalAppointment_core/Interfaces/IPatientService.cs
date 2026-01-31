@@ -9,6 +9,5 @@ namespace HospitalAppointment_core.Interfaces
 {
     public interface IPatientService
     {
-        bool CreatePatient(PatientDTO dto);
     }
 }

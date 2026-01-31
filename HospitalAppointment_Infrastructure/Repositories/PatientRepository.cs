@@ -1,10 +1,7 @@
 ﻿using HospitalAppointment_Infrastructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using HospitalAppointment_core.Interfaces.RepositoryInterfaces;
+using HospitalAppointment_domain.Entities;
+using System.Linq;
 
 namespace HospitalAppointment_Infrastructure.Repositories
 {
@@ -22,10 +19,10 @@ namespace HospitalAppointment_Infrastructure.Repositories
             return _context.Patients.Any(p => p.TcKimlikNo == tcKimlikNo);
         }
 
-        public void AddPatient(HospitalAppointment_domain.Entities.Patient patient)
+        public void AddPatient(Patient patient)
         {
+            // Do NOT call SaveChanges here. UnitOfWork.CommitAsync() will persist.
             _context.Patients.Add(patient);
-            _context.SaveChanges();
         }
     }
 }

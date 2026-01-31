@@ -14,5 +14,8 @@ namespace HospitalAppointment_core.Interfaces.RepositoryInterfaces
         Task<Appointment?> GetByIdAsync(int id);
         
         void Update(Appointment appointment);
+
+        // Added: list appointments for a patient
+        Task<IEnumerable<Appointment>> GetByPatientIdAsync(int patientId);
     }
 }

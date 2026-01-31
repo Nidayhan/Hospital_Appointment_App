@@ -31,7 +31,7 @@ namespace HospitalAppointment_Infrastructure.Repositories
         {
             return await _context.Appointments
                 .AnyAsync(a => a.DoctorId == doctorId 
-                && a.AppointmentDateTime == appointmentDateTime);
+                    && a.AppointmentDateTime == appointmentDateTime);
         }
 
         public async Task SaveAppointment(Appointment appointment)
@@ -42,6 +42,17 @@ namespace HospitalAppointment_Infrastructure.Repositories
         public void Update(Appointment appointment)
         {
             _context.Appointments.Update(appointment);
+        }
+
+        // Exact implementation of the interface member
+        public async Task<IEnumerable<Appointment>> GetByPatientIdAsync(int patientId)
+        {
+            return await _context.Appointments
+                .Include(a => a.Doctor)
+                .Include(a => a.Patient)
+                .Where(a => a.PatientId == patientId)
+                .OrderBy(a => a.AppointmentDateTime)
+                .ToListAsync();
         }
     }
 }

@@ -1,11 +1,9 @@
 ﻿using HospitalAppointment_core.Interfaces.RepositoryInterfaces;
 using HospitalAppointment_domain.Entities;
 using HospitalAppointment_Infrastructure.Data;
-using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HospitalAppointment_Infrastructure.Repositories
 {
@@ -21,14 +19,37 @@ namespace HospitalAppointment_Infrastructure.Repositories
         public List<Doctor> GetDoctorsByDepartmentId(int departmentId)
         {
             return _context.Doctors
-                           .Where(d => d.DepartmentId == departmentId && d.IsActive)
+                           .Where(d => d.DepartmentId == departmentId)
                            .ToList();
         }
 
         public void UpdateDoctor(Doctor doctor)
         {
             _context.Doctors.Update(doctor);
-            _context.SaveChanges();
         }
+
+        public void AddDoctor(Doctor doctor)
+        {
+            _context.Doctors.Add(doctor);
+        }
+
+        public Doctor? GetByUserId(int userId)
+        {
+            return _context.Doctors.FirstOrDefault(d => d.UserId == userId);
+        }
+
+        public Doctor? GetById(int id)
+        {
+            return _context.Doctors
+                           .Include(d => d.Department)
+                           .FirstOrDefault(d => d.Id == id);
+        }
+
+        public void RemoveDoctor(Doctor doctor)
+        {
+            _context.Doctors.Remove(doctor);
+        }
+
+
     }
 }

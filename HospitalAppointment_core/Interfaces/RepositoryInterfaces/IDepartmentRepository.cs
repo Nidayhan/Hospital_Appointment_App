@@ -12,5 +12,6 @@ namespace HospitalAppointment_core.Interfaces.RepositoryInterfaces
     {
         Department GetDepartmentById(int departmentId);
         void UpdateDepartment(Department department);
+        void SaveDepartment(Department department);
     }
 }

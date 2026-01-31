@@ -1,11 +1,7 @@
 ﻿using HospitalAppointment_core.Interfaces.RepositoryInterfaces;
 using HospitalAppointment_domain.Entities;
 using HospitalAppointment_Infrastructure.Data;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HospitalAppointment_Infrastructure.Repositories
 {
@@ -20,12 +16,17 @@ namespace HospitalAppointment_Infrastructure.Repositories
 
         public Department GetDepartmentById(int departmentId)
         {
-            throw new NotImplementedException();
+            return _context.Department.FirstOrDefault(d => d.Id == departmentId);
         }
 
         public void UpdateDepartment(Department department)
         {
-            throw new NotImplementedException();
+            _context.Department.Update(department);
+        }
+
+        public void SaveDepartment(Department department)
+        {
+            _context.Department.Add(department);
         }
     }
 }
