@@ -1,6 +1,8 @@
-﻿using HospitalAppointment_Infrastructure.Data;
-using HospitalAppointment_core.Interfaces.RepositoryInterfaces;
+﻿using HospitalAppointment_core.Interfaces.RepositoryInterfaces;
 using HospitalAppointment_domain.Entities;
+using HospitalAppointment_Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 using System.Linq;
 
 namespace HospitalAppointment_Infrastructure.Repositories
@@ -21,8 +23,20 @@ namespace HospitalAppointment_Infrastructure.Repositories
 
         public void AddPatient(Patient patient)
         {
-            // Do NOT call SaveChanges here. UnitOfWork.CommitAsync() will persist.
             _context.Patients.Add(patient);
+        }
+
+        public async Task<Patient?> GetByIdAsync(int id)
+        {
+            return await _context.Patients.FirstOrDefaultAsync(p => p.Id == id);
+        }
+
+        public async Task<Patient?> GetByTcAsync(string tcKimlikNo)
+        {
+            if (string.IsNullOrWhiteSpace(tcKimlikNo))
+                return null;
+
+            return await _context.Patients.FirstOrDefaultAsync(p => p.TcKimlikNo == tcKimlikNo);
         }
     }
 }

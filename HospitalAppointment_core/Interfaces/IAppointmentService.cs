@@ -12,5 +12,7 @@ namespace HospitalAppointment_core.Interfaces
         Task CancelAppointment(int appointmentId, int currentUserId);
         Task CreateAppointment(int patientId, int doctorId, DateTime appointmentDateTime);
         Task<IEnumerable<AppointmentResponseDTO>> GetAppointmentsByPatientAsync(int patientId);
+
+        Task<IEnumerable<DateTime>> GetAvailableSlotsAsync(int doctorId, DateTime dateUtc);
     }
 }

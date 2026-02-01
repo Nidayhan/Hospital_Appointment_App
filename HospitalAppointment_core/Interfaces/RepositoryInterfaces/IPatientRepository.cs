@@ -1,8 +1,4 @@
 ﻿using HospitalAppointment_domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace HospitalAppointment_core.Interfaces.RepositoryInterfaces
@@ -11,5 +7,11 @@ namespace HospitalAppointment_core.Interfaces.RepositoryInterfaces
     {
         bool TcKimlikNoExists(string tcKimlikNo);
         void AddPatient(Patient patient);
+
+        // fetch patient by id (async)
+        Task<Patient?> GetByIdAsync(int id);
+
+        // fetch patient by TcKimlikNo (async) - added to resolve Patients from User records
+        Task<Patient?> GetByTcAsync(string tcKimlikNo);
     }
 }

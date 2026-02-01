@@ -3,6 +3,7 @@ using HospitalAppointment_core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using System;
 
 namespace HospitalAppointment.Controllers
 {
@@ -12,10 +13,12 @@ namespace HospitalAppointment.Controllers
     public class DoctorController : ControllerBase
     {
         private readonly IDoctorService _doctorService;
+        private readonly IAppointmentService _appointmentService;
 
-        public DoctorController(IDoctorService doctorService)
+        public DoctorController(IDoctorService doctorService, IAppointmentService appointmentService)
         {
             _doctorService = doctorService;
+            _appointmentService = appointmentService;
         }
 
         [HttpPost]
@@ -58,6 +61,19 @@ namespace HospitalAppointment.Controllers
             };
 
             return Ok(response);
+        }
+
+        // New endpoint: available slots for doctor (date query param is optional; server expects UTC date)
+        [HttpGet("{id}/available-slots")]
+        [AllowAnonymous] // adjust authorization if you want only authenticated users
+        public async Task<IActionResult> GetAvailableSlots(int id, [FromQuery] DateTime? date)
+        {
+            var queryDateUtc = date.HasValue
+                ? (date.Value.Kind == DateTimeKind.Utc ? date.Value.Date : date.Value.ToUniversalTime().Date)
+                : DateTime.UtcNow.Date;
+
+            var slots = await _appointmentService.GetAvailableSlotsAsync(id, queryDateUtc);
+            return Ok(slots);
         }
 
         [HttpPut("{id}")]

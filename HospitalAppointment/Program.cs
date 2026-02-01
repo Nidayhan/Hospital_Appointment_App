@@ -25,6 +25,11 @@ builder.Services.AddControllers(options =>
         .RequireAuthenticatedUser()
         .Build();
     options.Filters.Add(new AuthorizeFilter(defaultPolicy));
+})
+.AddJsonOptions(opts =>
+{
+    // Return enum names (strings) instead of integers in JSON
+    opts.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
 });
 builder.Services.AddEndpointsApiExplorer();
 

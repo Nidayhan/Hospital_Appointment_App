@@ -29,9 +29,15 @@ namespace HospitalAppointment_Infrastructure.Repositories
 
         public async Task<bool> IsDoctorAvailable(int doctorId, DateTime appointmentDateTime)
         {
+            // Normalize incoming comparison to UTC for consistent checks
+            var appointmentUtc = appointmentDateTime.Kind == DateTimeKind.Utc
+                ? appointmentDateTime
+                : appointmentDateTime.ToUniversalTime();
+
+            // consider a booked slot if any existing appointment is within the same minute
             return await _context.Appointments
-                .AnyAsync(a => a.DoctorId == doctorId 
-                    && a.AppointmentDateTime == appointmentDateTime);
+                .AnyAsync(a => a.DoctorId == doctorId
+                               && EF.Functions.DateDiffMinute(a.AppointmentDateTime, appointmentUtc) == 0);
         }
 
         public async Task SaveAppointment(Appointment appointment)
@@ -52,6 +58,19 @@ namespace HospitalAppointment_Infrastructure.Repositories
                 .Include(a => a.Patient)
                 .Where(a => a.PatientId == patientId)
                 .OrderBy(a => a.AppointmentDateTime)
+                .ToListAsync();
+        }
+
+        // New: return appointments for a doctor on the given UTC date (from 00:00 UTC to next day 00:00 UTC)
+        public async Task<IEnumerable<Appointment>> GetAppointmentsForDoctorDateAsync(int doctorId, DateTime dateUtc)
+        {
+            var dayStart = DateTime.SpecifyKind(dateUtc.Date, DateTimeKind.Utc);
+            var dayEnd = dayStart.AddDays(1);
+
+            return await _context.Appointments
+                .Where(a => a.DoctorId == doctorId
+                            && a.AppointmentDateTime >= dayStart
+                            && a.AppointmentDateTime < dayEnd)
                 .ToListAsync();
         }
     }
